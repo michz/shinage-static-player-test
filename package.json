@@ -1,5 +1,5 @@
 {
-  "name": "shinage-static-player",
+  "name": "shinage-static-player-test",
   "version": "0.3.0",
   "description": "The static component for playing Shinage Digital Signage presentations",
   "main": "index.js",

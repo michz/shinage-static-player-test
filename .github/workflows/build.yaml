@@ -32,7 +32,7 @@ jobs:
           tar -czf ../build/shinage-static-player.tar.gz player.html
 
       - name: Write domain to CNAME file
-        run: echo "player.shinage.org" > CNAME
+        run: echo "player-test.shinage.org" > CNAME
 
       - name: Create Release
         if: github.event_name == 'push' && contains(github.ref, 'refs/tags/')
@@ -45,7 +45,7 @@ jobs:
           files: build/shinage-static-player.tar.gz
 
       - name: Deploy to GitHub pages
-        uses: JamesIves/github-pages-deploy-action@v4.6.8
+        uses: JamesIves/github-pages-deploy-action@v4.7.6
         with:
           branch: gh-pages
           folder: dist
